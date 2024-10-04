@@ -15,7 +15,7 @@
    Ensure you have `libcurl` installed on your system. Compile the program using the following command:
 
    ```bash
-   g++ -o link_grabber DumbLinks.cpp -lcurl
+   g++ -o DumbLinks DumbLinks.cpp -lcurl
    ```
 
 2. **Run the Program**:
@@ -23,7 +23,7 @@
    Execute the compiled program:
 
    ```bash
-   ./link_grabber
+   ./DumbLinks
    ```
 
 3. **Enter the URL**:
