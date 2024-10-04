@@ -2,9 +2,9 @@
 #include <curl/curl.h>
 #include <string>
 #include <regex>
- 
-using namespace std;
 
+
+using namespace std;
 string response;
 //Call back function to handle incoming data
 size_t WriteCallback(void* contents, size_t size, size_t nmemb, void* userp)
@@ -74,7 +74,11 @@ void link_parse()
         smatch match = *i; 
          //extract each url
         string link = match.str(1);
+        if( link.find("htt")!=0){
+
+        }else{
         cout << "Found link: " << link << endl; 
+        }
     }
 }
 
@@ -88,5 +92,5 @@ int main()
     cout << endl ;
     curled();
     link_parse();
-    return 0;
+    return 0;   
 }
